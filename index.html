@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="theme-color" content="#0B7A8C" />
+  <title>Newsroom | Uratibu — Sovereign Intelligence & Research</title>
+  
+  <meta name="description" content="The latest news, press releases, thought leadership, and field research from Uratibu: intelligence on governance, public investment, and sovereign capital." />
+  <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Uratibu" />
+  <meta property="og:title" content="Newsroom | Uratibu — Intelligence for Better Governance" />
+  <meta property="og:description" content="Research on governance, sovereign capital, and public investment from Uratibu." />
+  <meta property="og:image" content="assets/images/the-fruit-that-cannot-wait.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:site" content="@uratibuu" />
+
+  <link rel="icon" href="assets/images/favicon-32.png" sizes="32x32" type="image/png" />
+  <link rel="apple-touch-icon" href="assets/images/logo.jpg" />
+
+  <!-- Google Fonts: Instrument Serif, Outfit, Space Grotesk, JetBrains Mono -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital,wght@0,400;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+  <!-- Top Intelligence Metrics Ticker -->
+  <aside class="ur-ticker-bar" aria-label="Key Intelligence Metrics">
+    <div class="ur-inner ur-ticker-content">
+      <div class="ur-ticker-pulse">
+        <span class="ur-pulse-dot" aria-hidden="true"></span>
+        <span>Uratibu Field Intelligence Network</span>
+      </div>
+      <div class="ur-ticker-metrics">
+        <div class="ur-metric-item"><span>1,400+</span> Projects Tracked</div>
+        <div class="ur-metric-item"><span>USD 11.1B+</span> Sovereign Scope</div>
+        <div class="ur-metric-item"><span>60M+</span> Population Reach</div>
+        <div class="ur-metric-item"><span>8</span> Published Deep Dives</div>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Navigation Header -->
+  <header class="ur-nav">
+    <div class="ur-inner ur-nav-inner">
+      <a class="ur-wordmark" href="/">
+        <img class="ur-wordmark-logo" src="assets/images/logo.jpg" alt="Uratibu Logo" width="34" height="34" />
+        <span>Uratibu</span>
+        <span class="ur-wordmark-badge">Intelligence</span>
+      </a>
+
+      <div class="ur-nav-right">
+        <nav class="ur-nav-links" aria-label="Primary Navigation">
+          <a href="https://uratibu.com/#capabilities">Capabilities</a>
+          <a href="https://uratibu.com/#ratili">Ratili</a>
+          <a href="https://uratibu.com/#who-we-work-with">Who We Serve</a>
+          <a href="https://uratibu.com/#advisory">Advisory</a>
+          <a href="https://www.unga81.com/" target="_blank" rel="noopener noreferrer">UNGA 81 Tracker</a>
+          <a href="#newsroom-hub" class="active" aria-current="page">Newsroom</a>
+        </nav>
+
+        <button type="button" class="ur-cta ur-nav-cta" id="btnOpenBriefingNav">
+          Schedule a Strategic Briefing
+        </button>
+
+        <button type="button" class="ur-nav-toggle" id="btnToggleMobileMenu" aria-label="Toggle Navigation Menu">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="3" y1="12" x2="21" y2="12"></line>
+            <line x1="3" y1="6" x2="21" y2="6"></line>
+            <line x1="3" y1="18" x2="21" y2="18"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main id="newsroom-hub">
+
+    <!-- Newsroom Masthead -->
+    <section class="nr-masthead">
+      <div class="ur-inner nr-masthead-grid">
+        <div class="nr-masthead-copy">
+          <div class="nr-eyebrow-lead">Research & Sovereign Analysis</div>
+          <h1 class="nr-title-display">Evidence That Drives <em>Decisions.</em></h1>
+          <p class="nr-lead-copy">
+            The official intelligence hub of Uratibu. Deep dives into sovereign capital, public infrastructure, agro-industrial value addition, and field reports on what Africa's data actually shows.
+          </p>
+        </div>
+
+        <div class="nr-masthead-sidebar">
+          <div class="nr-dispatch-card">
+            <h3>Receive Sovereign Dispatches</h3>
+            <p>Join over 2,400 ministers, institutional investors, and development economists receiving our verified intelligence briefs.</p>
+            <form class="nr-dispatch-form" id="newsletterForm">
+              <input type="email" class="nr-dispatch-input" id="newsletterEmail" placeholder="Enter your work email" required />
+              <button type="submit" class="ur-cta ur-cta--sm">Subscribe</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Spotlight Featured Article -->
+    <section class="nr-featured-section">
+      <div class="ur-inner">
+        <article class="nr-featured-card" id="featuredCardContainer">
+          <!-- Dynamically populated from articles-data.js -->
+        </article>
+      </div>
+    </section>
+
+    <!-- Filter & Discovery Toolbar (Sticky) -->
+    <section class="nr-toolbar-section">
+      <div class="ur-inner nr-toolbar">
+        <!-- Category Tabs -->
+        <nav class="nr-category-tabs" id="categoryTabs" aria-label="Filter by Category">
+          <button class="nr-tab-btn active" data-category="ALL">
+            All <span class="nr-tab-count">(8)</span>
+          </button>
+          <button class="nr-tab-btn" data-category="THOUGHT LEADERSHIP">
+            Thought Leadership <span class="nr-tab-count">(6)</span>
+          </button>
+          <button class="nr-tab-btn" data-category="BLOG">
+            Blog <span class="nr-tab-count">(1)</span>
+          </button>
+          <button class="nr-tab-btn" data-category="PRESS RELEASE">
+            Press Releases <span class="nr-tab-count">(1)</span>
+          </button>
+          <button class="nr-tab-btn" data-category="MEDIA COVERAGE">
+            Media Coverage <span class="nr-tab-count">(0)</span>
+          </button>
+          <button class="nr-tab-btn" data-category="LETTERS FROM THE CEO">
+            Letters from CEO <span class="nr-tab-count">(0)</span>
+          </button>
+        </nav>
+
+        <!-- Controls: Search, Sort, View Toggle -->
+        <div class="nr-toolbar-controls">
+          <div class="nr-search-box">
+            <svg class="nr-search-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <circle cx="11" cy="11" r="8"></circle>
+              <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+            </svg>
+            <input type="search" class="nr-search-input" id="searchInput" placeholder="Search briefs, data, topics..." />
+          </div>
+
+          <div class="nr-view-toggle">
+            <button class="nr-view-btn active" id="btnGridView" title="Magazine Grid View" aria-label="Magazine Grid View">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <rect x="3" y="3" width="7" height="7"></rect>
+                <rect x="14" y="3" width="7" height="7"></rect>
+                <rect x="14" y="14" width="7" height="7"></rect>
+                <rect x="3" y="14" width="7" height="7"></rect>
+              </svg>
+            </button>
+            <button class="nr-view-btn" id="btnListView" title="Executive Compact List View" aria-label="Executive Compact List View">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <line x1="8" y1="6" x2="21" y2="6"></line>
+                <line x1="8" y1="12" x2="21" y2="12"></line>
+                <line x1="8" y1="18" x2="21" y2="18"></line>
+                <line x1="3" y1="6" x2="3.01" y2="6"></line>
+                <line x1="3" y1="12" x2="3.01" y2="12"></line>
+                <line x1="3" y1="18" x2="3.01" y2="18"></line>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Articles Feed Section -->
+    <section class="nr-feed-section">
+      <div class="ur-inner">
+        <!-- Magazine Grid View -->
+        <div class="nr-articles-grid" id="articlesGrid"></div>
+
+        <!-- Executive Compact List View -->
+        <div class="nr-articles-list" id="articlesList" style="display: none;"></div>
+
+        <!-- Empty State -->
+        <div class="nr-empty-state" id="emptyState" style="display: none;">
+          <svg class="nr-empty-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5">
+            <circle cx="11" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+          <h3 class="nr-empty-title">No matching intelligence briefs found</h3>
+          <p class="nr-empty-desc">We couldn't find any articles matching your query. Try resetting your search filter or selecting another category.</p>
+          <button type="button" class="ur-cta ur-cta--sm" id="btnResetFilters">View All Articles</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Interactive Reader Drawer / Modal -->
+  <div class="ur-reader-overlay" id="readerOverlay" role="dialog" aria-modal="true">
+    <div class="ur-reader-container" id="readerContainer">
+      <div class="ur-reader-header-bar">
+        <div class="ur-reader-progress" id="readerProgressBar"></div>
+        <button type="button" class="ur-reader-close-btn" id="btnCloseReader">
+          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <line x1="19" y1="12" x2="5" y2="12"></line>
+            <polyline points="12 19 5 12 12 5"></polyline>
+          </svg>
+          <span>Back to Newsroom</span>
+        </button>
+
+        <div class="ur-reader-share-group">
+          <button type="button" class="ur-share-btn" id="btnCopyArticleLink" title="Copy Link">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"></path>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"></path>
+            </svg>
+            <span>Share</span>
+          </button>
+          <button type="button" class="ur-share-btn" id="btnShareTwitter" title="Share on X">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"></path>
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <!-- Reader Article Content Dynamic Container -->
+      <div id="readerArticleContent"></div>
+    </div>
+  </div>
+
+  <!-- Strategic Briefing Request Modal -->
+  <div class="ur-modal-overlay" id="briefingModal" role="dialog" aria-modal="true">
+    <div class="ur-modal-box">
+      <button type="button" class="ur-modal-close" id="btnCloseBriefingModal" aria-label="Close modal">✕</button>
+      <div class="nr-eyebrow-lead">Executive Advisory</div>
+      <h2 style="font-family: var(--ur-font-serif); font-size: 2rem; color: var(--ur-ink); margin-bottom: 0.5rem;">Schedule a Strategic Briefing</h2>
+      <p style="font-size: 0.9rem; color: var(--ur-text-muted); margin-bottom: 1.5rem;">
+        Connect with Uratibu's senior intelligence team to review confidential data models, sovereign infrastructure projections, or custom policy evaluation.
+      </p>
+
+      <form id="briefingForm">
+        <div class="ur-form-group">
+          <label class="ur-form-label" for="briefingName">Full Name</label>
+          <input type="text" id="briefingName" class="ur-form-input" placeholder="e.g. Dr. Amina Odhiambo" required />
+        </div>
+        <div class="ur-form-group">
+          <label class="ur-form-label" for="briefingEmail">Official / Institutional Email</label>
+          <input type="email" id="briefingEmail" class="ur-form-input" placeholder="name@ministry.go.ke or name@fund.com" required />
+        </div>
+        <div class="ur-form-group">
+          <label class="ur-form-label" for="briefingSector">Focus Sector</label>
+          <select id="briefingSector" class="ur-form-select">
+            <option value="Sovereign Infrastructure & Debt">Sovereign Infrastructure & Debt Architecture</option>
+            <option value="Agro-Industry & Value Addition">Agro-Industry & Domestic Processing</option>
+            <option value="Critical Minerals & Extractive Policy">Critical Minerals & Extractive Policy</option>
+            <option value="Public Governance & Ratili Platform">Public Governance & Ratili Monitoring Platform</option>
+            <option value="Sports & Stadium Analytics (AFCON 2027)">Sports & Stadium Analytics (AFCON 2027)</option>
+          </select>
+        </div>
+        <div class="ur-form-group">
+          <label class="ur-form-label" for="briefingNotes">Briefing Objective</label>
+          <textarea id="briefingNotes" class="ur-form-textarea" rows="3" placeholder="Outline specific intelligence scope or decision timeline..."></textarea>
+        </div>
+        <button type="submit" class="ur-cta" style="width: 100%; margin-top: 0.5rem;">
+          Request Confidential Briefing
+        </button>
+      </form>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="ur-toast" id="toastNotification" role="status" aria-live="polite">
+    <span id="toastMessage">Notification message</span>
+  </div>
+
+  <!-- Global Footer -->
+  <footer class="ur-footer">
+    <div class="ur-inner">
+      <div class="ur-footer-top">
+        <div class="ur-footer-brand">
+          <a class="ur-wordmark" href="/" style="color: #FFFFFF;">
+            <img class="ur-wordmark-logo" src="assets/images/logo.jpg" alt="Uratibu" width="34" height="34" />
+            <span>Uratibu</span>
+          </a>
+          <p class="ur-footer-desc">
+            Uratibu is an impact data, intelligence and advisory firm helping institutions and development partners transform data into decisions, strategy into implementation, and public investment into measurable outcomes.
+          </p>
+        </div>
+
+        <div class="ur-footer-col">
+          <h4>Research & Hub</h4>
+          <ul class="ur-footer-links-list">
+            <li><a href="#newsroom-hub">Latest Intelligence</a></li>
+            <li><a href="https://uratibu.com/#capabilities">Sovereign Capabilities</a></li>
+            <li><a href="https://uratibu.com/#ratili">Ratili Platform</a></li>
+            <li><a href="https://www.unga81.com/" target="_blank">UNGA 81 Tracker</a></li>
+          </ul>
+        </div>
+
+        <div class="ur-footer-col">
+          <h4>Firm</h4>
+          <ul class="ur-footer-links-list">
+            <li><a href="https://uratibu.com/#who-we-work-with">Who We Serve</a></li>
+            <li><a href="https://uratibu.com/#advisory">Advisory Practice</a></li>
+            <li><a href="https://uratibu.com/privacy">Privacy Policy</a></li>
+            <li><a href="mailto:uratibu@uratibu.com">Contact Firm</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="ur-footer-bottom">
+        <div>© 2026 Uratibu. All rights reserved. Registered Impact & Strategic Advisory.</div>
+        <div class="ur-footer-social">
+          <a class="ur-footer-social-icon" href="https://x.com/uratibuu" target="_blank" rel="noopener noreferrer" aria-label="X (Twitter)">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"></path>
+            </svg>
+          </a>
+          <a class="ur-footer-social-icon" href="https://www.linkedin.com/company/uratibu/" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.72v20.55C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.72C24 .77 23.2 0 22.22 0Z"></path>
+            </svg>
+          </a>
+          <a class="ur-footer-social-icon" href="https://instagram.com/uratibuu" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M12 2.16c3.2 0 3.58.01 4.85.07 1.17.05 1.8.25 2.23.41.56.22.96.48 1.38.9.42.42.68.82.9 1.38.16.42.36 1.06.41 2.23.06 1.27.07 1.65.07 4.85s-.01 3.58-.07 4.85c-.05 1.17-.25 1.8-.41 2.23-.22.56-.48.96-.9 1.38-.42.42-.82.68-1.38.9-.42.16-1.06.36-2.23.41-1.27.06-1.65.07-4.85.07s-3.58-.01-4.85-.07c-1.17-.05-1.8-.25-2.23-.41a3.8 3.8 0 0 1-1.38-.9 3.8 3.8 0 0 1-.9-1.38c-.16-.42-.36-1.06-.41-2.23-.06-1.27-.07-1.65-.07-4.85s.01-3.58.07-4.85c.05-1.17.25-1.8.41-2.23.22-.56.48-.96.9-1.38.42-.42.82-.68 1.38-.9.42-.16 1.06-.36 2.23-.41C8.42 2.17 8.8 2.16 12 2.16Z"></path>
+            </svg>
+          </a>
+          <a class="ur-footer-social-icon" href="mailto:uratibu@uratibu.com" aria-label="Email Uratibu">
+            <svg viewBox="0 0 24 24" fill="currentColor">
+              <path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2Zm0 4-8 5-8-5V6l8 5 8-5v2Z"></path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="articles-data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

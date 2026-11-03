@@ -1,0 +1,12 @@
+{
+  "name": "uratibu-newsroom",
+  "version": "1.0.0",
+  "description": "Uratibu Newsroom — High-impact intelligence, research, and sovereign policy publications.",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve ."
+  },
+  "keywords": ["uratibu", "newsroom", "sovereign", "intelligence", "governance", "africa"],
+  "author": "Marvin Andrew",
+  "license": "MIT"
+}
